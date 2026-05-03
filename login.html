@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+<!-- CSP: defence-in-depth. Real CSP should be served as an HTTP header
+     via your host (see _headers / netlify.toml in repo root). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com; font-src 'self' https://fonts.gstatic.com https://api.fontshare.com https://cdn.fontshare.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; base-uri 'self'; form-action 'self';">
+
+<title>Log in — Castivo customer portal</title>
+<meta name="description" content="Sign in to your Castivo account to manage your screens, content, and billing.">
+<meta name="author" content="Castivo / QwickIn IT Services Pty Ltd">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://castivo.com.au/login.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://castivo.com.au/login.html">
+<meta property="og:title" content="Castivo — Log in">
+<meta property="og:description" content="Sign in to manage your digital signage.">
+<meta property="og:image" content="https://castivo.com.au/assets/og-image.png">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Castivo">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Castivo — Log in">
+<meta name="twitter:description" content="Sign in to manage your digital signage.">
+<meta name="twitter:image" content="https://castivo.com.au/assets/og-image.png">
+
+<meta name="theme-color" content="#F26B1F">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<!-- Satoshi from Fontshare (free for commercial use) -->
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/castivo.css">
+<style>
+  body { background: var(--paper); }
+</style>
+
+<!-- Google Analytics 4 — add your GA4 Measurement ID and uncomment to enable.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+</script>
+-->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Castivo home">
+      <img src="assets/castivo-primary-light.png" alt="Castivo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="products.html">Product</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="signup.html" class="btn btn-secondary">Sign up</a>
+      <a href="pricing.html#start" class="btn btn-primary">Start free <span class="arrow">→</span></a>
+    </div>
+    <button class="nav-mobile-toggle" aria-label="Open menu"><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="products.html">Product</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="resources.html">Resources</a>
+  <a href="login.html">Log in</a>
+  <a href="signup.html">Sign up</a>
+  <div class="mobile-cta"><a href="pricing.html#start" class="btn btn-primary btn-large">Start free</a></div>
+</div>
+
+<!-- ===== LOGIN ===== -->
+<section class="login-wrap">
+
+  <!-- Left: marketing aside -->
+  <div class="login-aside">
+    <div class="logo">
+      <img src="assets/castivo-primary-dark.png" alt="Castivo" loading="lazy" decoding="async">
+    </div>
+
+    <div>
+      <h1>Welcome back<br>to <span class="accent">your screens.</span></h1>
+      <p>Manage your Android TVs, schedule content, push updates live, and track every screen across every location — all from your customer portal.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="num">99.5%</div>
+        <div class="label">Cloud platform uptime</div>
+      </div>
+      <div class="stat">
+        <div class="num">60s</div>
+        <div class="label">From sign-in to live screen</div>
+      </div>
+      <div class="stat">
+        <div class="num">100%</div>
+        <div class="label">Australian-hosted &amp; supported</div>
+      </div>
+      <div class="stat">
+        <div class="num">$0</div>
+        <div class="label">Setup fees, ever</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: login form -->
+  <div class="login-form-wrap">
+    <form class="login-form">
+      <h3>Sign in</h3>
+      <p class="login-sub">Enter your details to access your Castivo customer portal.</p>
+
+      <div class="form-field">
+        <label for="email">Email address</label>
+        <input id="email" type="email" placeholder="you@example.com.au" required>
+      </div>
+
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="••••••••" required>
+      </div>
+
+      <div class="form-row">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-large">Sign in <span class="arrow">→</span></button>
+
+      <div class="divider">or</div>
+
+      <button type="button" class="btn btn-secondary" style="width: 100%;" onclick="alert('SSO is available on Castivo Business and Enterprise plans. In production, this would redirect to your identity provider (Google Workspace, Microsoft, or Okta).');">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Sign in with SSO
+      </button>
+
+      <p class="signup-cta">
+        New to Castivo? <a href="signup.html">Sign up free →</a>
+      </p>
+    </form>
+  </div>
+
+</section>
+
+
+<!-- ===== AI ASSISTANT (Cassie) ===== -->
+<button class="ai-bubble" aria-label="Open chat with Cassie">
+  <div class="ai-pulse"></div>
+  <svg class="ai-bubble-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  <svg class="ai-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</button>
+
+<div class="ai-panel" role="dialog" aria-label="Cassie AI assistant">
+  <div class="ai-header">
+    <div class="ai-avatar">C</div>
+    <div class="ai-header-info">
+      <div class="ai-name">Cassie</div>
+      <div class="ai-status">Castivo's AI · Replies in seconds</div>
+    </div>
+  </div>
+  <div class="ai-messages">
+    <div class="ai-msg from-bot">G'day! I'm <b>Cassie</b>, the Castivo assistant. Ask me anything about pricing, supported TVs, setup, or book a demo.</div>
+    <div class="ai-suggestions">
+      <button class="ai-chip">How does pricing work?</button>
+      <button class="ai-chip">What TVs are supported?</button>
+      <button class="ai-chip">Book a demo</button>
+      <button class="ai-chip">How do I set up?</button>
+    </div>
+  </div>
+  <div class="ai-input">
+    <input type="text" placeholder="Type your message..." aria-label="Message input">
+    <button aria-label="Send message">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="js/castivo.js" defer></script>
+</body>
+</html>

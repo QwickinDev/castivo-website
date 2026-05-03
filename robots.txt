@@ -1,0 +1,6 @@
+# Castivo robots.txt
+User-agent: *
+Allow: /
+Disallow: /login.html
+
+Sitemap: https://castivo.com.au/sitemap.xml

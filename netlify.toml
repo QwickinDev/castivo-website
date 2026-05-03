@@ -1,0 +1,44 @@
+[build]
+  publish = "."
+
+# Headers are also picked up from _headers, but listed here for visibility.
+# If both files exist, _headers wins.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Pretty URLs — /pricing instead of /pricing.html
+[[redirects]]
+  from = "/pricing"
+  to = "/pricing.html"
+  status = 200
+[[redirects]]
+  from = "/products"
+  to = "/products.html"
+  status = 200
+[[redirects]]
+  from = "/solutions"
+  to = "/solutions.html"
+  status = 200
+[[redirects]]
+  from = "/resources"
+  to = "/resources.html"
+  status = 200
+[[redirects]]
+  from = "/testimonials"
+  to = "/testimonials.html"
+  status = 200
+[[redirects]]
+  from = "/login"
+  to = "/login.html"
+  status = 200
+[[redirects]]
+  from = "/signup"
+  to = "/signup.html"
+  status = 200

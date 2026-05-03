@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+<!-- CSP: defence-in-depth. Real CSP should be served as an HTTP header
+     via your host (see _headers / netlify.toml in repo root). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com; font-src 'self' https://fonts.gstatic.com https://api.fontshare.com https://cdn.fontshare.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; base-uri 'self'; form-action 'self';">
+
+<title>Castivo — Hardware-free digital signage for your Android TV</title>
+<meta name="description" content="Software-only digital signage that runs on your existing Android TV. Australian-built, no lock-in, fairly priced. From $9 AUD per screen per month.">
+<meta name="author" content="Castivo / QwickIn IT Services Pty Ltd">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://castivo.com.au/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://castivo.com.au/">
+<meta property="og:title" content="Castivo — Digital signage that just works">
+<meta property="og:description" content="Hardware-free, lock-in-free, hassle-free digital signage. From $9/screen/month AUD.">
+<meta property="og:image" content="https://castivo.com.au/assets/og-image.png">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Castivo">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Castivo — Digital signage that just works">
+<meta name="twitter:description" content="Hardware-free, lock-in-free, hassle-free digital signage. From $9/screen/month AUD.">
+<meta name="twitter:image" content="https://castivo.com.au/assets/og-image.png">
+
+<meta name="theme-color" content="#F26B1F">
+<!-- JSON-LD: Organisation -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Castivo",
+  "url": "https://castivo.com.au",
+  "logo": "https://castivo.com.au/assets/castivo-primary-light.png",
+  "description": "Hardware-free digital signage software for Android TV. Australian-built.",
+  "sameAs": ["https://linkedin.com/company/castivo", "https://twitter.com/castivo"],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "hello@castivo.com.au",
+    "areaServed": "AU",
+    "availableLanguage": "English"
+  }
+}
+</script>
+<!-- JSON-LD: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Castivo Digital Signage",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Android TV 8.0+",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "AUD",
+    "description": "Free plan available with 1 screen, paid plans from $9 AUD per screen per month"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "200"
+  }
+}
+</script>
+
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Satoshi from Fontshare (free for commercial use) -->
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/castivo.css">
+
+<!-- Google Analytics 4 — add your GA4 Measurement ID and uncomment to enable.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+</script>
+-->
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Castivo home">
+      <img src="assets/castivo-primary-light.png" alt="Castivo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="products.html">Product</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost" style="padding: 9px 14px; font-size: 14px;">Log in</a>
+      <a href="signup.html" class="btn btn-secondary">Sign up</a>
+      <a href="pricing.html#start" class="btn btn-primary">Start free <span class="arrow">→</span></a>
+    </div>
+    <button class="nav-mobile-toggle" aria-label="Open menu"><span></span></button>
+  </div>
+</nav>
+
+<div class="nav-mobile">
+  <a href="products.html">Product</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="resources.html">Resources</a>
+  <a href="login.html">Log in</a>
+  <a href="signup.html">Sign up</a>
+  <div class="mobile-cta">
+    <a href="pricing.html#start" class="btn btn-primary btn-large">Start free</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow-wrap reveal">
+          <span class="pill">New</span>
+          <span class="label">Free in-person setup in metro Australia</span>
+        </div>
+        <h1 class="hero-headline reveal delay-1">
+          Digital signage<br>
+          <span class="highlight">that just works.</span>
+        </h1>
+        <p class="hero-sub reveal delay-2">
+          Turn any Android&nbsp;TV into a beautiful digital sign in under 60 seconds. No screens to ship. No installers to wait for. No 36-month contracts. Just software, made in Australia, supported by humans you can call.
+        </p>
+        <div class="hero-cta reveal delay-3">
+          <a href="pricing.html#start" class="btn btn-primary btn-large">Start free <span class="arrow">→</span></a>
+          <a href="tel:1300227848" class="btn-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div class="btn-phone-text">
+              <span class="btn-phone-eyebrow">Or call us — real humans</span>
+              <span class="btn-phone-num">1300 CASTIVO</span>
+            </div>
+          </a>
+        </div>
+        <div class="hero-trust reveal delay-3">
+          <span><span class="check">✓</span> No credit card required</span>
+          <span><span class="check">✓</span> Cancel anytime</span>
+          <span><span class="check">✓</span> AUD pricing, GST inclusive</span>
+        </div>
+      </div>
+
+      <!-- Photographic-style TV with auto-cycling 6-layout demo -->
+      <!-- A static photo placeholder (assets/hero-tv.jpg) is also available
+           if you'd prefer a single non-animated hero image. -->
+      <div class="hero-tv reveal delay-2">
+        <div class="hero-tv-stage">
+          <div class="hero-tv-bezel">
+            <div class="hero-tv-screen">
+              <!-- 1: Hospitality -->
+              <div class="screen-layout sl-hosp">
+                <div class="sl-eyebrow">Today's special</div>
+                <div class="sl-title">Flat&nbsp;white<br>+ croissant</div>
+                <div class="sl-bottom">
+                  <span class="sl-meta">Until 11&nbsp;am</span>
+                  <span class="sl-price">$9</span>
+                </div>
+              </div>
+              <!-- 2: Retail -->
+              <div class="screen-layout sl-retail">
+                <div class="sl-retail-eyebrow">SALE</div>
+                <div class="sl-retail-pct">50%</div>
+                <div class="sl-retail-sub">EVERYTHING&nbsp;MUST&nbsp;GO</div>
+              </div>
+              <!-- 3: Petrol / fuel -->
+              <div class="screen-layout sl-fuel">
+                <div class="sl-fuel-head">FUEL PRICES TODAY</div>
+                <div class="sl-fuel-row"><span class="t">U91</span><span class="p">189.9</span></div>
+                <div class="sl-fuel-row"><span class="t">P95</span><span class="p">209.9</span></div>
+                <div class="sl-fuel-row"><span class="t">DSL</span><span class="p">214.5</span></div>
+                <div class="sl-fuel-foot">UPDATED 06:42 AEDT</div>
+              </div>
+              <!-- 4: Healthcare queue -->
+              <div class="screen-layout sl-clinic">
+                <div class="sl-clinic-eyebrow">NOW SERVING</div>
+                <div class="sl-clinic-num">A042</div>
+                <div class="sl-clinic-room">ROOM 3</div>
+              </div>
+              <!-- 5: Real estate -->
+              <div class="screen-layout sl-listing">
+                <div class="sl-listing-eyebrow">NEW LISTING</div>
+                <div class="sl-listing-addr">3 / 142 Smith&nbsp;St</div>
+                <div class="sl-listing-meta">Fitzroy &middot; 2 bed &middot; 1 bath</div>
+                <div class="sl-listing-price">$895,000</div>
+              </div>
+              <!-- 6: Fitness classes -->
+              <div class="screen-layout sl-classes">
+                <div class="sl-classes-head">CLASSES TODAY</div>
+                <div class="sl-classes-row"><span class="t">06:00</span><span class="c">HIIT</span></div>
+                <div class="sl-classes-row"><span class="t">07:30</span><span class="c hl">YOGA</span></div>
+                <div class="sl-classes-row"><span class="t">17:30</span><span class="c">SPIN</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-tv-shadow"></div>
+          <div class="hero-tv-bokeh b1"></div>
+          <div class="hero-tv-bokeh b2"></div>
+          <div class="hero-tv-bokeh b3"></div>
+        </div>
+        <div class="hint-card top">
+          <div class="dot"></div>
+          <div>
+            <span class="meta">Screen 02</span>
+            <span class="label">Online &middot; Sydney</span>
+          </div>
+        </div>
+        <div class="hint-card bottom">
+          <div class="dot"></div>
+          <div>
+            <span class="meta">Auto-cycling</span>
+            <span class="label">6 industry templates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INLINE CASSIE — 'Ask Cassie anything' ===== -->
+<section class="cassie-inline-section">
+  <div class="container">
+    <div class="cassie-inline reveal">
+      <div class="cassie-inline-head">
+        <div class="cassie-avatar-large">
+          <div class="cassie-avatar-pulse"></div>
+          <span>C</span>
+        </div>
+        <div>
+          <div class="cassie-eyebrow">Castivo's AI assistant</div>
+          <h2 class="cassie-headline">Got a question?<br><span class="accent">Just ask Cassie.</span></h2>
+          <p class="cassie-sub">Pricing, supported TVs, setup, contracts — Cassie answers in seconds. No sales call required, no waiting for an email reply.</p>
+        </div>
+      </div>
+      <div class="cassie-chat" data-cassie-inline>
+        <div class="cassie-msg from-bot">
+          G'day! I'm <b>Cassie</b>, the Castivo AI. Ask me anything below — or pick a question to get started:
+        </div>
+        <div class="cassie-suggestions">
+          <button class="cassie-chip" data-prompt="How much would Castivo cost for 5 screens?">How much for 5 screens?</button>
+          <button class="cassie-chip" data-prompt="Will Castivo work on my Hisense Android TV?">Will it work on my TV?</button>
+          <button class="cassie-chip" data-prompt="Can I cancel anytime?">Can I cancel anytime?</button>
+          <button class="cassie-chip" data-prompt="How do I switch from another signage platform?">Switching from another platform?</button>
+        </div>
+        <div class="cassie-input-row">
+          <input type="text" placeholder="Type your question — Cassie replies instantly" aria-label="Ask Cassie a question">
+          <button class="cassie-send" aria-label="Send message">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+        <div class="cassie-foot">
+          <span>Or talk to a human:</span>
+          <a href="tel:1300227848"><b>1300 CASTIVO</b></a>
+          <span>&middot;</span>
+          <a href="#book-demo">Book a 30-min demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOGO STRIP / TRUST ===== -->
+<section class="logo-strip">
+  <div class="container logo-strip-inner">
+    <span class="label">Trusted by Australian businesses across</span>
+    <div class="companies">
+      <span>Hospitality</span>
+      <span>Retail</span>
+      <span>Healthcare</span>
+      <span>Real Estate</span>
+      <span>Education</span>
+      <span>Fitness</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== DEMO VIDEO ===== -->
+<section class="video-section">
+  <div class="container">
+    <div class="video-frame" role="button" tabindex="0" aria-label="Play product walkthrough video">
+      <div class="video-poster">
+        <div class="video-poster-content">
+          <button class="video-play-btn" aria-label="Play video">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <div class="label">Product walkthrough</div>
+          <div class="title">From sign-up to live in 60 seconds</div>
+          <div class="runtime">2:14 · No sound needed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video modal -->
+<div class="video-modal">
+  <div class="video-modal-content">
+    <button class="video-modal-close" aria-label="Close video">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div style="display: flex; align-items: center; justify-content: center; height: 100%; flex-direction: column; color: var(--cream); padding: 40px; text-align: center;">
+      <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; color: var(--tangerine); margin-bottom: 12px;">DEMO PLACEHOLDER</div>
+      <div style="font-family: var(--font-display); font-weight: 700; font-size: 28px; letter-spacing: -1px; margin-bottom: 12px;">Video coming soon</div>
+      <div style="font-size: 15px; color: rgba(255,246,238,0.65); max-width: 420px;">In production, this modal would embed the actual product walkthrough video (2:14 runtime).</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">How it works</div>
+      <h2 class="h-display h2">From box to <span class="accent">on-air</span> in 60 seconds.</h2>
+      <p class="lead">No technicians. No installers. No screens to ship. Just download the app, enter a passcode, and you're broadcasting.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-num">01 — SIGN UP</div>
+        <div class="step-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg>
+        </div>
+        <h3>Pick your plan</h3>
+        <p>Sign up at castivo.com.au, choose a tier, pay by card or direct debit. Account live immediately — no sales call required.</p>
+      </div>
+      <div class="step-card reveal delay-1">
+        <div class="step-num">02 — INSTALL</div>
+        <div class="step-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M20 21H4"/></svg>
+        </div>
+        <h3>Drop the app on your TV</h3>
+        <p>Install Castivo on your existing Android TV. We'll walk you through it remotely, or come to you in person if you're in metro Australia.</p>
+      </div>
+      <div class="step-card reveal delay-2">
+        <div class="step-num">03 — PAIR</div>
+        <div class="step-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Enter the 6-digit code</h3>
+        <p>The app shows a one-time passcode on the TV. Type it into the cloud portal — done. Pairing takes under 60 seconds.</p>
+      </div>
+      <div class="step-card reveal delay-3">
+        <div class="step-num">04 — PUBLISH</div>
+        <div class="step-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18l7-5 7 5V3z"/></svg>
+        </div>
+        <h3>Push your content live</h3>
+        <p>Upload images, video, or build in the editor. Hit publish — content appears on the screen seconds later. Update from anywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 60-SECOND PROOF — visual setup timeline ===== -->
+<section class="proof-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">60 seconds, end to end</div>
+      <h2 class="h-display h2">From sign-up to live<br><span class="accent">in under a minute.</span></h2>
+      <p class="lead">No exaggeration. No 14-screen setup wizard. Here's exactly what happens, second by second.</p>
+    </div>
+
+    <div class="proof-timeline">
+      <div class="proof-line"></div>
+
+      <div class="proof-step reveal">
+        <div class="proof-time">0:00</div>
+        <div class="proof-dot"></div>
+        <div class="proof-card">
+          <div class="proof-action">Sign up</div>
+          <p>Hit "Start free" at castivo.com.au. Email + password, that's it. No card details, no sales call, no demo gating.</p>
+        </div>
+      </div>
+
+      <div class="proof-step reveal delay-1">
+        <div class="proof-time">0:12</div>
+        <div class="proof-dot"></div>
+        <div class="proof-card">
+          <div class="proof-action">Open the app on your TV</div>
+          <p>Castivo's already on the Google Play Store for Android TV. Search, install, open. The screen shows a one-time 6-digit code.</p>
+        </div>
+      </div>
+
+      <div class="proof-step reveal delay-2">
+        <div class="proof-time">0:30</div>
+        <div class="proof-dot"></div>
+        <div class="proof-card">
+          <div class="proof-action">Pair the screen</div>
+          <p>Type the 6-digit code into the cloud portal on your laptop. The screen pairs in two seconds and shows up in your dashboard.</p>
+        </div>
+      </div>
+
+      <div class="proof-step reveal delay-3">
+        <div class="proof-time">0:45</div>
+        <div class="proof-dot"></div>
+        <div class="proof-card">
+          <div class="proof-action">Pick a template</div>
+          <p>Browse 500+ templates by industry. Drag your logo on, edit a price or a headline. Or upload your own image — done.</p>
+        </div>
+      </div>
+
+      <div class="proof-step reveal">
+        <div class="proof-time">0:58</div>
+        <div class="proof-dot final"></div>
+        <div class="proof-card final">
+          <div class="proof-action">Push live</div>
+          <p>Click publish. Content appears on your TV in two seconds. You're done — and any TV in the room is now a digital sign.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="proof-badge reveal">
+      <div class="proof-stopwatch">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M9 1h6"/></svg>
+      </div>
+      <div>
+        <div class="proof-badge-num">58 seconds</div>
+        <div class="proof-badge-label">Average setup time across the last 200 new accounts.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== THE WEDGE — promoted above features ===== -->
+<section class="wedge-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Why switch</div>
+      <h2 class="h-display h2">Enterprise signage providers charge <span class="accent">$4,968</span><br>for what costs you <span class="accent">$456</span> with Castivo.</h2>
+      <p class="lead">A real enterprise digital-signage contract for software running on a customer's own hardware ("BYO" tier). Then the same outcome through Castivo Pro. Same screen. Same cloud platform. Wildly different bill.</p>
+    </div>
+
+    <div class="wedge-grid">
+      <div class="wedge-card them reveal">
+        <div class="label">Enterprise signage — BYO tier</div>
+        <div class="total">$4,968</div>
+        <div class="breakdown">$138 / month × 36 months · per screen</div>
+        <ul>
+          <li>36-month lock-in. No exit.</li>
+          <li>70% early-termination fee on remaining months</li>
+          <li>Personal guarantee from a director required</li>
+          <li>$350 fee if your staff don't sign off the install</li>
+          <li>$650 cancellation fee on rescheduled visits</li>
+          <li>Direct debit mandatory</li>
+        </ul>
+      </div>
+      <div class="wedge-card us reveal delay-1">
+        <div class="label">Castivo — Pro</div>
+        <div class="total">$456</div>
+        <div class="breakdown">$19 / month × 24 months · per screen</div>
+        <ul>
+          <li>Month-to-month, 12, or 24 months — your call</li>
+          <li>Cancel anytime after the initial term, 30 days' notice</li>
+          <li>No personal guarantee for established ABNs</li>
+          <li>No sign-off penalties, no booking fees</li>
+          <li>Card or direct debit — your choice</li>
+          <li>Free in-person setup in metro Australia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 48px;">
+      <a href="pricing.html" class="btn btn-primary btn-large">See full pricing <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FEATURES ===== -->
+<section class="section" style="background: var(--cream);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">What's inside</div>
+      <h2 class="h-display h2">Everything you need.<br><span class="accent">Nothing you don't.</span></h2>
+      <p class="lead">A modern cloud platform paired with a rock-solid Android TV app. Built for Australian businesses that want digital signs working today, not next month.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card reveal">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Cloud content editor</h3>
+        <p>Drag-and-drop builder with 500+ industry templates. Design once, push to one screen or hundreds in a single click.</p>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Smart scheduling</h3>
+        <p>Schedule by date, time, day-of-week, or location. Brunch menu at 7am, lunch at 11, happy hour from 4pm — all automatic.</p>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c-2-3-5-5-9-5S5 9 3 12c2 3 5 5 9 5s7-2 9-5z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Multi-location control</h3>
+        <p>Group screens by store, city, or brand. Push a national promotion in one click, or run different content per location.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
+        <h3>Proof-of-play reports</h3>
+        <p>Know exactly what played, when, and on which screen. Match content to sales data to see what actually drives results.</p>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-12a8 8 0 0 1 16 0c0 7.5-8 12-8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Made in Australia</h3>
+        <p>Australian-hosted data, AUD invoicing with GST, and humans you can call during your business hours, not theirs.</p>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
+        <h3>No lock-in, ever</h3>
+        <p>Month-to-month, 12, or 24 months — your call. Cancel anytime after the initial term with 30 days' notice. No 70% penalties.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDUSTRY CAROUSEL ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Built for any business</div>
+      <h2 class="h-display h2">Wherever you put a screen,<br><span class="accent">Castivo runs on it.</span></h2>
+      <p class="lead">Cafés, supermarkets, petrol stations, gyms, hospitals, real-estate offices — Castivo is industry-agnostic and content-flexible.</p>
+    </div>
+
+    <div class="carousel" data-carousel>
+      <div class="carousel-track-wrap">
+        <div class="carousel-track">
+          <!-- Hospitality -->
+          <article class="carousel-card">
+            <div class="carousel-card-visual">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#FDEEDC"/>
+                <circle cx="320" cy="80" r="50" fill="#F26B1F" opacity="0.25"/>
+                <rect x="60" y="100" width="200" height="140" rx="8" fill="#14110F"/>
+                <rect x="74" y="114" width="172" height="100" rx="3" fill="#F26B1F"/>
+                <text x="84" y="148" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#FFF6EE">DAILY SPECIAL</text>
+                <text x="84" y="180" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="34" fill="#FFF6EE">$12.50</text>
+                <text x="84" y="200" font-family="Inter Tight, sans-serif" font-size="11" fill="#FFF6EE" opacity="0.85">Burger + chips + drink</text>
+                <circle cx="160" cy="240" r="6" fill="#3D332C"/>
+                <circle cx="174" cy="240" r="6" fill="#3D332C"/>
+              </svg>
+            </div>
+            <div class="carousel-card-body">
+              <span class="tag">Hospitality</span>
+              <h3>Cafés, restaurants &amp; bars</h3>
+              <p>Digital menu boards that change with the time of day. Run breakfast, lunch, happy hour, and dinner from a single editor.</p>
+              <div class="examples">Used for: menu boards · daily specials · table-side promos</div>
+            </div>
+          </article>
+
+          <!-- Retail -->
+          <article class="carousel-card">
+            <div class="carousel-card-visual">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#FFF6EE"/>
+                <rect x="40" y="60" width="320" height="180" rx="6" fill="#14110F"/>
+                <rect x="56" y="76" width="288" height="148" rx="2" fill="#FDEEDC"/>
+                <text x="200" y="125" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="32" fill="#14110F">SALE</text>
+                <text x="200" y="170" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="58" fill="#F26B1F">50%</text>
+                <text x="200" y="195" text-anchor="middle" font-family="Inter Tight, sans-serif" font-weight="600" font-size="13" fill="#3D332C">EVERYTHING MUST GO</text>
+              </svg>
+            </div>
+            <div class="carousel-card-body">
+              <span class="tag">Retail</span>
+              <h3>Supermarkets &amp; stores</h3>
+              <p>Window displays, in-aisle promos, point-of-sale upsells. Update store-wide pricing in seconds, not weeks.</p>
+              <div class="examples">Used for: window signs · aisle promos · checkout displays</div>
+            </div>
+          </article>
+
+          <!-- Petrol stations -->
+          <article class="carousel-card">
+            <div class="carousel-card-visual">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#14110F"/>
+                <text x="200" y="80" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#FFF6EE" opacity="0.7" letter-spacing="2">FUEL PRICES TODAY</text>
+                <g transform="translate(60, 100)">
+                  <text font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#F26B1F">U91</text>
+                  <text x="90" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#FFF6EE">189.9</text>
+                </g>
+                <g transform="translate(60, 145)">
+                  <text font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#F26B1F">P95</text>
+                  <text x="90" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#FFF6EE">209.9</text>
+                </g>
+                <g transform="translate(60, 190)">
+                  <text font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#F26B1F">DSL</text>
+                  <text x="90" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#FFF6EE">214.5</text>
+                </g>
+                <line x1="60" y1="230" x2="340" y2="230" stroke="#F26B1F" stroke-width="2"/>
+                <text x="200" y="255" text-anchor="middle" font-family="Inter Tight, sans-serif" font-weight="500" font-size="11" fill="#FFF6EE" opacity="0.65">UPDATED 06:42 AEDT</text>
+              </svg>
+            </div>
+            <div class="carousel-card-body">
+              <span class="tag">Petrol &amp; convenience</span>
+              <h3>Servos &amp; convenience stores</h3>
+              <p>Forecourt fuel pricing, in-store promos, and food specials all from one dashboard. Connect POS feeds for live pricing.</p>
+              <div class="examples">Used for: fuel boards · forecourt screens · food &amp; drink specials</div>
+            </div>
+          </article>
+
+          <!-- Healthcare -->
+          <article class="carousel-card">
+            <div class="carousel-card-visual">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#FFF6EE"/>
+                <rect x="60" y="60" width="280" height="180" rx="8" fill="#FFFFFF" stroke="#ECE3D5" stroke-width="2"/>
+                <text x="80" y="100" font-family="Inter Tight, sans-serif" font-weight="500" font-size="11" fill="#8A7A6E" letter-spacing="2">NOW SERVING</text>
+                <text x="80" y="155" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="60" fill="#14110F">A042</text>
+                <text x="80" y="180" font-family="Inter Tight, sans-serif" font-weight="500" font-size="11" fill="#8A7A6E" letter-spacing="2">ROOM 3</text>
+                <circle cx="305" cy="105" r="22" fill="#F26B1F"/>
+                <text x="305" y="111" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="20" fill="#FFF6EE">+</text>
+                <line x1="80" y1="210" x2="320" y2="210" stroke="#ECE3D5"/>
+                <text x="80" y="228" font-family="Inter Tight, sans-serif" font-size="10" fill="#8A7A6E">Next: A043, A044</text>
+              </svg>
+            </div>
+            <div class="carousel-card-body">
+              <span class="tag">Healthcare</span>
+              <h3>Clinics &amp; hospitals</h3>
+              <p>Patient queue displays, wayfinding, and waiting-room information. Calm, clear, and updated in real time.</p>
+              <div class="examples">Used for: queue boards · directories · health-info screens</div>
+            </div>
+          </article>
+
+          <!-- Real estate -->
+          <article class="carousel-card">
+            <div class="carousel-card-visual">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#14110F"/>
+                <rect x="50" y="60" width="140" height="180" rx="4" fill="#3D332C"/>
+                <polygon points="50,60 120,40 190,60" fill="#F26B1F"/>
+                <rect x="80" y="120" width="30" height="50" fill="#14110F"/>
+                <rect x="130" y="100" width="30" height="30" fill="#FDEEDC"/>
+                <text x="220" y="100" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#F26B1F" letter-spacing="2">NEW LISTING</text>
+                <text x="220" y="135" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="26" fill="#FFF6EE">3 / 142 Smith St</text>
+                <text x="220" y="160" font-family="Inter Tight, sans-serif" font-size="13" fill="#FFF6EE" opacity="0.7">Fitzroy · 2 bed · 1 bath</text>
+                <rect x="220" y="185" width="100" height="36" rx="18" fill="#F26B1F"/>
+                <text x="270" y="208" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="14" fill="#FFF6EE">$895,000</text>
+              </svg>
+            </div>
+            <div class="carousel-card-body">
+              <span class="tag">Real estate</span>
+              <h3>Window listing displays</h3>
+              <p>Bright, vibrant property listings in your office window — visible day and night. Update from your desk, no print runs.</p>
+              <div class="examples">Used for: window listings · open-home boards · auction signs</div>
+            </div>
+          </article>
+
+          <!-- Fitness -->
+          <article class="carousel-card">
+            <div class="carousel-card-visual">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#FDEEDC"/>
+                <rect x="60" y="60" width="280" height="180" rx="6" fill="#14110F"/>
+                <text x="200" y="105" text-anchor="middle" font-family="Inter Tight, sans-serif" font-weight="600" font-size="11" fill="#F26B1F" letter-spacing="3">CLASSES TODAY</text>
+                <line x1="80" y1="120" x2="320" y2="120" stroke="#F26B1F" stroke-width="1" opacity="0.3"/>
+                <g transform="translate(80, 145)">
+                  <text font-family="Inter Tight, sans-serif" font-size="11" fill="#FFF6EE" opacity="0.5">06:00</text>
+                  <text x="55" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="14" fill="#FFF6EE">HIIT</text>
+                </g>
+                <g transform="translate(80, 175)">
+                  <text font-family="Inter Tight, sans-serif" font-size="11" fill="#FFF6EE" opacity="0.5">07:30</text>
+                  <text x="55" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="14" fill="#F26B1F">YOGA</text>
+                </g>
+                <g transform="translate(80, 205)">
+                  <text font-family="Inter Tight, sans-serif" font-size="11" fill="#FFF6EE" opacity="0.5">17:30</text>
+                  <text x="55" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="14" fill="#FFF6EE">SPIN</text>
+                </g>
+              </svg>
+            </div>
+            <div class="carousel-card-body">
+              <span class="tag">Fitness</span>
+              <h3>Gyms &amp; studios</h3>
+              <p>Class timetables, member promotions, and motivational content on every screen — front desk, lobby, studio.</p>
+              <div class="examples">Used for: class schedules · membership promos · studio displays</div>
+            </div>
+          </article>
+
+          <!-- Education -->
+          <article class="carousel-card">
+            <div class="carousel-card-visual">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#FFF6EE"/>
+                <rect x="60" y="80" width="280" height="160" rx="8" fill="#FFFFFF" stroke="#ECE3D5"/>
+                <rect x="60" y="80" width="280" height="40" rx="8" fill="#F26B1F"/>
+                <text x="200" y="106" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="16" fill="#FFF6EE">ASSEMBLY · 11:00 AM</text>
+                <text x="80" y="148" font-family="Inter Tight, sans-serif" font-size="11" fill="#8A7A6E" letter-spacing="1.5">TODAY'S NOTICES</text>
+                <text x="80" y="172" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="14" fill="#14110F">Year 7 sports carnival — Fri</text>
+                <text x="80" y="194" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="14" fill="#14110F">Library closes early</text>
+                <text x="80" y="216" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="14" fill="#14110F">Canteen specials — Wed</text>
+              </svg>
+            </div>
+            <div class="carousel-card-body">
+              <span class="tag">Education</span>
+              <h3>Schools &amp; universities</h3>
+              <p>Daily notices, event schedules, emergency alerts. Manage signage across multiple campuses from one dashboard.</p>
+              <div class="examples">Used for: notice boards · campus wayfinding · canteen menus</div>
+            </div>
+          </article>
+
+          <!-- Office -->
+          <article class="carousel-card">
+            <div class="carousel-card-visual">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#14110F"/>
+                <text x="80" y="80" font-family="Inter Tight, sans-serif" font-weight="600" font-size="11" fill="#F26B1F" letter-spacing="2">REVENUE THIS QUARTER</text>
+                <text x="80" y="135" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="44" fill="#FFF6EE">$2.4M</text>
+                <text x="80" y="160" font-family="Inter Tight, sans-serif" font-size="13" fill="#4ADE80" font-weight="600">▲ +18.2% vs Q3</text>
+                <g transform="translate(80, 185)">
+                  <rect width="32" height="36" y="14" fill="#F26B1F" opacity="0.4"/>
+                  <rect x="40" width="32" height="48" y="2" fill="#F26B1F" opacity="0.6"/>
+                  <rect x="80" width="32" height="40" y="10" fill="#F26B1F" opacity="0.8"/>
+                  <rect x="120" width="32" height="50" fill="#F26B1F"/>
+                  <rect x="160" width="32" height="32" y="18" fill="#F26B1F" opacity="0.4"/>
+                  <rect x="200" width="32" height="44" y="6" fill="#F26B1F" opacity="0.7"/>
+                </g>
+              </svg>
+            </div>
+            <div class="carousel-card-body">
+              <span class="tag">Corporate</span>
+              <h3>Offices &amp; reception</h3>
+              <p>KPI dashboards, internal comms, meeting room schedules, and visitor welcome screens. Live data integrations included.</p>
+              <div class="examples">Used for: dashboards · welcome screens · room booking</div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <div class="carousel-dots"></div>
+        <div class="carousel-arrows">
+          <button class="carousel-btn" data-carousel-prev aria-label="Previous">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="carousel-btn" data-carousel-next aria-label="Next">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top: 48px;">
+      <a href="solutions.html" class="btn btn-secondary btn-large">See all solutions <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOK A DEMO ===== -->
+<section class="section" id="book-demo" style="background: var(--cream);">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Book a demo</div>
+      <h2 class="h-display h2">See Castivo on a real screen,<br><span class="accent">in 30 minutes.</span></h2>
+      <p class="lead">Pick a time. We'll jump on a call (or come visit if you're in metro Australia) and walk through the platform on your actual content.</p>
+    </div>
+
+    <div class="booking-widget">
+      <!-- Step 1: Date + time picker -->
+      <div class="booking-step-1">
+        <div class="booking-info">
+          <h3>30-min product demo</h3>
+          <p>One of our team will walk you through Castivo on a live Android TV, show you how the cloud editor works, and answer any questions about your specific use case.</p>
+          <div class="booking-meta">
+            <div class="booking-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              30 minutes
+            </div>
+            <div class="booking-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Phone, video, or in-person
+            </div>
+            <div class="booking-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-12a8 8 0 0 1 16 0c0 7.5-8 12-8 12z"/><circle cx="12" cy="10" r="3"/></svg>
+              Australian time zones
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="cal">
+            <div class="cal-header">
+              <div class="cal-month">November 2025</div>
+              <div class="cal-nav">
+                <button class="cal-prev" aria-label="Previous month">‹</button>
+                <button class="cal-next" aria-label="Next month">›</button>
+              </div>
+            </div>
+            <div class="cal-grid"></div>
+          </div>
+          <div class="time-slots"></div>
+          <button class="btn btn-primary" data-booking-continue style="width: 100%; margin-top: 16px;" disabled>Continue <span class="arrow">→</span></button>
+        </div>
+      </div>
+
+      <!-- Step 2: Details form -->
+      <div class="booking-step-2">
+        <form class="booking-form" style="display: contents;">
+          <div class="booking-info">
+            <h3>Just a few details</h3>
+            <p>We'll send you a calendar invite once you submit.</p>
+            <div style="background: var(--cream); border-radius: 12px; padding: 16px 20px; margin-top: 20px;">
+              <div style="font-family: var(--font-mono); font-size: 11px; color: var(--tangerine); letter-spacing: 1.5px; font-weight: 600; margin-bottom: 6px;">YOUR BOOKING</div>
+              <div style="font-family: var(--font-display); font-weight: 700; font-size: 17px; line-height: 1.3;" data-selected-date>—</div>
+              <div style="font-size: 14px; color: var(--charcoal); margin-top: 4px;" data-selected-time>—</div>
+              <button type="button" data-booking-back style="margin-top: 12px; font-size: 12px; color: var(--tangerine); background: none; border: none; cursor: pointer; font-weight: 600; padding: 0;">← Change date/time</button>
+            </div>
+          </div>
+
+          <div>
+            <div class="form-field"><label>Full name</label><input type="text" name="name" required></div>
+            <div class="form-field"><label>Business name</label><input type="text" name="business" required></div>
+            <div class="form-field"><label>Email</label><input type="email" name="email" required></div>
+            <div class="form-field"><label>Phone (optional)</label><input type="tel" name="phone"></div>
+            <div class="form-field">
+              <label>What would you like to see?</label>
+              <select name="topic" required>
+                <option value="">Select</option>
+                <option>Cloud editor walkthrough</option>
+                <option>Android TV setup &amp; pairing</option>
+                <option>Multi-location demo</option>
+                <option>Custom integration (POS, weather, etc.)</option>
+                <option>Pricing / volume discussion</option>
+                <option>Just exploring</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Book my demo <span class="arrow">→</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== TESTIMONIAL CAROUSEL ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Customer love</div>
+      <h2 class="h-display h2">Real businesses,<br><span class="accent">real screens.</span></h2>
+    </div>
+
+    <div class="carousel" data-carousel>
+      <div class="carousel-track-wrap">
+        <div class="carousel-track">
+          <div class="carousel-card">
+            <div class="testimonial-card" style="border:none;">
+              <div class="quote">Switched from another platform and we're saving over $200 a month per location. Setup took 5 minutes — Vinay drove out to our café and had it running before we'd finished morning service.</div>
+              <div class="author">
+                <div class="avatar"><img src="assets/avatars/jess-k.png" alt="Jess K. portrait" width="80" height="80" loading="lazy" decoding="async"></div>
+                <div class="author-info">
+                  <div class="name">Jess K.</div>
+                  <div class="role">Café owner · Carlton</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="testimonial-card" style="border:none;">
+              <div class="quote">We run 14 servos across regional Victoria. Castivo is the first signage platform that actually understands what an Australian small business needs — local support, AUD pricing, no contracts.</div>
+              <div class="author">
+                <div class="avatar"><img src="assets/avatars/mark-o.png" alt="Mark O. portrait" width="80" height="80" loading="lazy" decoding="async"></div>
+                <div class="author-info">
+                  <div class="name">Mark O.</div>
+                  <div class="role">Operations · Servo group, Geelong</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="testimonial-card" style="border:none;">
+              <div class="quote">Our window display gets refreshed every Tuesday with new property listings. Used to take an hour with printouts — now it's done from my phone in under five minutes.</div>
+              <div class="author">
+                <div class="avatar"><img src="assets/avatars/sarah-p.png" alt="Sarah P. portrait" width="80" height="80" loading="lazy" decoding="async"></div>
+                <div class="author-info">
+                  <div class="name">Sarah P.</div>
+                  <div class="role">Real estate agent · Toowoomba</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="testimonial-card" style="border:none;">
+              <div class="quote">We onboarded 22 schools across our district in three weeks. The one-time-passcode pairing meant our IT team didn't need to touch a single TV — the schools did it themselves.</div>
+              <div class="author">
+                <div class="avatar"><img src="assets/avatars/david-l.png" alt="David L. portrait" width="80" height="80" loading="lazy" decoding="async"></div>
+                <div class="author-info">
+                  <div class="name">David L.</div>
+                  <div class="role">IT lead · Schools across Ballarat</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="testimonial-card" style="border:none;">
+              <div class="quote">Honestly the best thing about Castivo is that you can ring them and get a real person. We've been on Yodeck before and support is just an email queue. Local matters.</div>
+              <div class="author">
+                <div class="avatar"><img src="assets/avatars/renata-t.png" alt="Renata T. portrait" width="80" height="80" loading="lazy" decoding="async"></div>
+                <div class="author-info">
+                  <div class="name">Renata T.</div>
+                  <div class="role">Clinic manager · Bunbury</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <div class="carousel-dots"></div>
+        <div class="carousel-arrows">
+          <button class="carousel-btn" data-carousel-prev aria-label="Previous">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="carousel-btn" data-carousel-next aria-label="Next">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-stripe">
+  <div class="container">
+    <h2 class="h-display h2">Ready to ditch the<br>paper signs?</h2>
+    <p class="lead">Start with one screen, free forever. Upgrade when you're ready. Cancel anytime.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a href="pricing.html#start" class="btn btn-primary btn-large">Start free <span class="arrow">→</span></a>
+      <a href="pricing.html" class="btn btn-secondary btn-large">See pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/castivo-primary-dark.png" alt="Castivo" loading="lazy" decoding="async">
+        <p>Hardware-free digital signage for your existing Android TV. Made in Australia.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.5 18V10h-3v8zM7 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM18 18v-4.7c0-2.4-1.3-3.5-3-3.5-1.4 0-2 .8-2.4 1.4V10h-3v8h3v-4.4c0-.3 0-.6.1-.8.2-.6.7-1.2 1.6-1.2 1.1 0 1.6.8 1.6 2.1V18z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.81.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.05 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.81-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.25.05-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.81-.25-2.23-.42-.56-.22-.96-.48-1.38-.9a3.7 3.7 0 0 1-.9-1.38c-.17-.42-.37-1.06-.42-2.23C2.27 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.81.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.4 2.27 8.8 2.2 12 2.2zM12 0C8.74 0 8.33 0 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.9 5.9 0 0 0 1.38 2.13 5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="products.html">Features</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="resources.html#devices">Compatible TVs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="resources.html#about">About</a></li>
+          <li><a href="resources.html#contact">Contact</a></li>
+          <li><a href="resources.html#blog">Blog</a></li>
+          <li><a href="resources.html#partners">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="testimonials.html">Customer stories</a></li>
+          <li><a href="resources.html#help">Help center</a></li>
+          <li><a href="resources.html#guides">Setup guides</a></li>
+          <li><a href="resources.html#faq">FAQ</a></li>
+          <li><a href="login.html">Customer portal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="resources.html#terms">Terms</a></li>
+          <li><a href="resources.html#privacy">Privacy</a></li>
+          <li><a href="resources.html#agreement">Subscription agreement</a></li>
+          <li><a href="resources.html#dpa">Data processing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Castivo, operated by QwickIn IT Services Pty Ltd. All rights reserved.</span>
+      <div class="legal">
+        <a href="resources.html#terms">Terms</a>
+        <a href="resources.html#privacy">Privacy</a>
+        <a href="resources.html#cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ===== AI ASSISTANT (Cassie) ===== -->
+<button class="ai-bubble" aria-label="Open chat with Cassie">
+  <div class="ai-pulse"></div>
+  <svg class="ai-bubble-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  <svg class="ai-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</button>
+
+<div class="ai-panel" role="dialog" aria-label="Cassie AI assistant">
+  <div class="ai-header">
+    <div class="ai-avatar">C</div>
+    <div class="ai-header-info">
+      <div class="ai-name">Cassie</div>
+      <div class="ai-status">Castivo's AI · Replies in seconds</div>
+    </div>
+  </div>
+  <div class="ai-messages">
+    <div class="ai-msg from-bot">G'day! I'm <b>Cassie</b>, the Castivo assistant. Ask me anything about pricing, supported TVs, setup, or book a demo.</div>
+    <div class="ai-suggestions">
+      <button class="ai-chip">How does pricing work?</button>
+      <button class="ai-chip">What TVs are supported?</button>
+      <button class="ai-chip">Book a demo</button>
+      <button class="ai-chip">How do I set up?</button>
+    </div>
+  </div>
+  <div class="ai-input">
+    <input type="text" placeholder="Type your message..." aria-label="Message input">
+    <button aria-label="Send message">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="js/castivo.js" defer></script>
+</body>
+</html>

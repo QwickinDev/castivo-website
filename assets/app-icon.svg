@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F26B1F"/>
+      <stop offset="100%" stop-color="#B9491A"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF6EE"/>
+      <stop offset="100%" stop-color="#FFF6EE"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square bg -->
+  <rect x="0" y="0" width="512" height="512" rx="115" fill="url(#bg)"/>
+  <!-- TV screen outline -->
+  <rect x="92" y="142" width="328" height="252" rx="32" fill="none" stroke="#FFFFFF" stroke-width="28"/>
+  <!-- Cast signal waves -->
+  <g transform="translate(146, 232)">
+    <circle cx="0" cy="130" r="18" fill="url(#wave)"/>
+    <path d="M 0 92 A 38 38 0 0 1 38 130" fill="none" stroke="url(#wave)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 0 54 A 76 76 0 0 1 76 130" fill="none" stroke="url(#wave)" stroke-width="18" stroke-linecap="round"/>
+  </g>
+</svg>

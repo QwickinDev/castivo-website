@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+<!-- CSP: defence-in-depth. Real CSP should be served as an HTTP header
+     via your host (see _headers / netlify.toml in repo root). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com; font-src 'self' https://fonts.gstatic.com https://api.fontshare.com https://cdn.fontshare.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; base-uri 'self'; form-action 'self';">
+
+
+<title>Customer stories — Castivo</title>
+<meta name="description" content="Real Australian businesses using Castivo. Cafés, retail, healthcare, real estate, fitness, education, and more.">
+<meta name="author" content="Castivo / QwickIn IT Services Pty Ltd">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://castivo.com.au/testimonials.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://castivo.com.au/testimonials.html">
+<meta property="og:title" content="Castivo — Real stories from real businesses">
+<meta property="og:description" content="4.9★ from 200+ Australian businesses.">
+<meta property="og:image" content="https://castivo.com.au/assets/og-image.png">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Castivo">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Castivo — Real stories from real businesses">
+<meta name="twitter:description" content="4.9★ from 200+ Australian businesses.">
+
+<meta name="theme-color" content="#F26B1F">
+
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/castivo.css">
+
+<!-- Google Analytics 4 — add your GA4 Measurement ID and uncomment to enable.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+</script>
+-->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Castivo home">
+      <img src="assets/castivo-primary-light.png" alt="Castivo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="products.html">Product</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost" style="padding: 9px 14px; font-size: 14px;">Log in</a>
+      <a href="signup.html" class="btn btn-secondary">Sign up</a>
+      <a href="pricing.html#start" class="btn btn-primary">Start free <span class="arrow">→</span></a>
+    </div>
+    <button class="nav-mobile-toggle" aria-label="Open menu"><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="products.html">Product</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="resources.html">Resources</a>
+  <a href="login.html">Log in</a>
+  <a href="signup.html">Sign up</a>
+  <div class="mobile-cta"><a href="pricing.html#start" class="btn btn-primary btn-large">Start free</a></div>
+</div>
+
+<section class="page-head">
+  <div class="container">
+    <div class="breadcrumb">Home <span class="sep">/</span> Customer stories</div>
+    <h1>Real businesses.<br><span class="accent">Real screens.</span></h1>
+    <p class="lead">A few hundred Australian businesses run their digital signage on Castivo. Here's what some of them have to say.</p>
+  </div>
+</section>
+
+<!-- Star summary -->
+<section class="testimonials-summary">
+  <div class="container">
+    <div class="testimonials-stars">
+      <span class="stars-icon">★</span>
+      <span>4.9</span>
+    </div>
+    <div class="meta">From <strong>200+ Australian businesses</strong> · Hospitality · Retail · Healthcare · Real Estate · Education · and more</div>
+  </div>
+</section>
+
+<!-- Filter + Grid -->
+<section class="section">
+  <div class="container">
+    <div class="testimonial-filters">
+      <button class="filter-chip is-active" data-filter="all">All industries</button>
+      <button class="filter-chip" data-filter="hospitality">Hospitality</button>
+      <button class="filter-chip" data-filter="retail">Retail</button>
+      <button class="filter-chip" data-filter="petrol">Petrol &amp; convenience</button>
+      <button class="filter-chip" data-filter="healthcare">Healthcare</button>
+      <button class="filter-chip" data-filter="realestate">Real estate</button>
+      <button class="filter-chip" data-filter="fitness">Fitness</button>
+      <button class="filter-chip" data-filter="education">Education</button>
+      <button class="filter-chip" data-filter="corporate">Corporate</button>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <article class="testi-card" data-industry="hospitality">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Switched from another platform and we're saving over $200 a month per location. Setup took 5 minutes — Vinay drove out to our café and had it running before we'd finished morning service."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">JK</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Jess K.</div>
+            <div class="testi-role">Café owner · Carlton VIC</div>
+          </div>
+          <span class="testi-tag">Hospitality</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="petrol">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"We run 14 servos across regional Victoria. Castivo is the first signage platform that actually understands what an Australian small business needs — local support, AUD pricing, no contracts."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">MO</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Mark O.</div>
+            <div class="testi-role">Operations · Regional VIC</div>
+          </div>
+          <span class="testi-tag">Petrol</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="realestate">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Our window display gets refreshed every Tuesday with new property listings. Used to take an hour with printouts — now it's done from my phone in under five minutes."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">SP</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Sarah P.</div>
+            <div class="testi-role">Real estate agent · Brisbane QLD</div>
+          </div>
+          <span class="testi-tag">Real estate</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="education">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"We onboarded 22 schools across our district in three weeks. The one-time-passcode pairing meant our IT team didn't need to touch a single TV — the schools did it themselves."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">DL</div>
+          <div class="testi-author-info">
+            <div class="testi-name">David L.</div>
+            <div class="testi-role">IT lead · NSW education district</div>
+          </div>
+          <span class="testi-tag">Education</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="healthcare">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Honestly the best thing about Castivo is that you can ring them and get a real person. We've been on Yodeck before and support is just an email queue. Local matters."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">RT</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Renata T.</div>
+            <div class="testi-role">Clinic manager · Adelaide SA</div>
+          </div>
+          <span class="testi-tag">Healthcare</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="hospitality">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Three pubs, three different breakfast/lunch/dinner menus. Castivo schedules them all automatically — I haven't touched the TVs in months. Just push from my laptop on a Sunday afternoon and it's all done."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">BM</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Brad M.</div>
+            <div class="testi-role">Publican · Geelong VIC</div>
+          </div>
+          <span class="testi-tag">Hospitality</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="retail">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Window display brought us a 30% lift in foot traffic in the first month. The fact we can change it from anywhere — even on the road — is a game changer for a small retail chain."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">AC</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Amelia C.</div>
+            <div class="testi-role">Owner · Boutique chain · Sydney NSW</div>
+          </div>
+          <span class="testi-tag">Retail</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="fitness">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Studio class schedules used to be printed every week. Castivo replaced all that. It also pulls live data from Mindbody, so the timetable on the lobby screen is always up to date."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">KN</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Kim N.</div>
+            <div class="testi-role">Studio manager · Yoga chain · Perth WA</div>
+          </div>
+          <span class="testi-tag">Fitness</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="corporate">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Reception, lift lobbies, meeting rooms — all running Castivo. We display KPIs, visitor welcomes, and room bookings. Setup was a Friday afternoon job, no IT consultant required."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">JT</div>
+          <div class="testi-author-info">
+            <div class="testi-name">James T.</div>
+            <div class="testi-role">Office manager · Tech firm · Melbourne VIC</div>
+          </div>
+          <span class="testi-tag">Corporate</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="petrol">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"We change fuel prices three times a day. Used to mean an attendant climbing a ladder. Now it's two clicks from my phone. Saved us hours every week."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">RG</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Rohan G.</div>
+            <div class="testi-role">Owner · Independent servo · Western Sydney NSW</div>
+          </div>
+          <span class="testi-tag">Petrol</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="healthcare">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Patient-now-serving displays in three clinic rooms, plus a wayfinding board in the lobby. All on the cheap Chromecasts we already had plugged into TVs. Castivo just worked, day one."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">PH</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Dr Priya H.</div>
+            <div class="testi-role">GP · Northern suburbs · Melbourne VIC</div>
+          </div>
+          <span class="testi-tag">Healthcare</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="hospitality">
+        <div class="stars">★★★★☆</div>
+        <div class="testi-quote">"Solid platform, fairly priced. Would love a few more drag-and-drop animation options in the editor — but that's coming, the team told me. The basics work flawlessly."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">LH</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Luca H.</div>
+            <div class="testi-role">Restaurateur · Italian bistro · Sydney NSW</div>
+          </div>
+          <span class="testi-tag">Hospitality</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="realestate">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Rolled this out across 8 offices in our network. The tag-and-group feature means each office sees their own listings, but the brand stays consistent everywhere. Worth every dollar."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">EW</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Ellen W.</div>
+            <div class="testi-role">Marketing director · Property network · QLD</div>
+          </div>
+          <span class="testi-tag">Real estate</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="retail">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"After getting burned by a 36-month contract once, I told myself never again. Castivo's month-to-month was the deciding factor. Quality matches the price too."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">TL</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Trent L.</div>
+            <div class="testi-role">Manager · Grocery store · Hobart TAS</div>
+          </div>
+          <span class="testi-tag">Retail</span>
+        </div>
+      </article>
+
+      <article class="testi-card" data-industry="education">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"Daily notice boards, library hours, canteen specials — all on Castivo. Year 11 students even built their own student-news channel for one of the entrance screens. Great platform."</div>
+        <div class="testi-author">
+          <div class="testi-avatar">KM</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Kate M.</div>
+            <div class="testi-role">Deputy principal · Independent school · Adelaide SA</div>
+          </div>
+          <span class="testi-tag">Education</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Submit your story -->
+<section class="section" style="background: var(--cream);" id="submit">
+  <div class="container container-narrow">
+    <div class="section-head" style="text-align: left; margin-bottom: 32px;">
+      <div class="eyebrow">Your turn</div>
+      <h2 class="h-display h2">Share your <span class="accent">Castivo story.</span></h2>
+      <p style="color: var(--charcoal); font-size: 15.5px; margin-top: 12px; max-width: 600px;">If Castivo's working for your business, we'd love to hear about it. The best stories may end up here, on social, or in a case study (with your permission).</p>
+    </div>
+
+    <form class="submit-testimonial-form" style="background: white; border: 1px solid var(--line); border-radius: 18px; padding: 32px;">
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="t-name">Your name</label>
+          <input id="t-name" type="text" required>
+        </div>
+        <div class="form-field">
+          <label for="t-business">Business name</label>
+          <input id="t-business" type="text" required>
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="t-email">Email</label>
+          <input id="t-email" type="email" required>
+        </div>
+        <div class="form-field">
+          <label for="t-industry">Industry</label>
+          <select id="t-industry" required>
+            <option value="">Select</option>
+            <option>Hospitality</option>
+            <option>Retail</option>
+            <option>Petrol &amp; convenience</option>
+            <option>Healthcare</option>
+            <option>Real estate</option>
+            <option>Fitness</option>
+            <option>Education</option>
+            <option>Corporate</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="t-rating">Your rating</label>
+        <select id="t-rating" required>
+          <option value="">Select</option>
+          <option value="5">★★★★★ — Loved it</option>
+          <option value="4">★★★★ — Good experience</option>
+          <option value="3">★★★ — Mixed</option>
+          <option value="2">★★ — Some issues</option>
+          <option value="1">★ — Did not work for us</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="t-quote">Your story</label>
+        <textarea id="t-quote" rows="5" placeholder="What does Castivo do for your business? What do you like, what could be better?" required></textarea>
+      </div>
+
+      <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--charcoal); margin: 12px 0 24px; cursor: pointer;">
+        <input type="checkbox" required style="margin-top: 3px;">
+        <span>I'm OK with Castivo using my name, business, and quote in marketing materials. They'll send me a draft for approval before publishing.</span>
+      </label>
+
+      <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Submit my story <span class="arrow">→</span></button>
+    </form>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-stripe">
+  <div class="container">
+    <h2 class="h-display h2">Be the next story.</h2>
+    <p class="lead">Start with a free screen, see if Castivo's a fit, then upgrade or walk away. No risk.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a href="signup.html" class="btn btn-primary btn-large">Sign up free <span class="arrow">→</span></a>
+      <a href="resources.html#contact" class="btn btn-secondary btn-large">Talk to us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/castivo-primary-dark.png" alt="Castivo" loading="lazy" decoding="async">
+        <p>Hardware-free digital signage for your existing Android TV. Made in Australia.</p>
+      </div>
+      <div class="footer-col"><h5>Product</h5><ul><li><a href="products.html">Features</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="resources.html#devices">Compatible TVs</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="resources.html#about">About</a></li><li><a href="resources.html#contact">Contact</a></li><li><a href="testimonials.html">Customer stories</a></li><li><a href="resources.html#partners">Partners</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul><li><a href="resources.html#help">Help center</a></li><li><a href="resources.html#guides">Setup guides</a></li><li><a href="resources.html#faq">FAQ</a></li><li><a href="login.html">Customer portal</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="resources.html#terms">Terms</a></li><li><a href="resources.html#privacy">Privacy</a></li><li><a href="resources.html#agreement">Subscription agreement</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Castivo, operated by QwickIn IT Services Pty Ltd. All rights reserved.</span>
+      <div class="legal"><a href="resources.html#terms">Terms</a><a href="resources.html#privacy">Privacy</a><a href="resources.html#cookies">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- AI Assistant -->
+<button class="ai-bubble" aria-label="Open chat with Cassie">
+  <div class="ai-pulse"></div>
+  <svg class="ai-bubble-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  <svg class="ai-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</button>
+<div class="ai-panel" role="dialog" aria-label="Cassie AI assistant">
+  <div class="ai-header">
+    <div class="ai-avatar">C</div>
+    <div class="ai-header-info">
+      <div class="ai-name">Cassie</div>
+      <div class="ai-status">Castivo's AI · Replies in seconds</div>
+    </div>
+  </div>
+  <div class="ai-messages">
+    <div class="ai-msg from-bot">G'day! I'm <b>Cassie</b>, the Castivo assistant. Ask me anything about pricing, supported TVs, setup, or book a demo.</div>
+    <div class="ai-suggestions">
+      <button class="ai-chip">How does pricing work?</button>
+      <button class="ai-chip">What TVs are supported?</button>
+      <button class="ai-chip">Book a demo</button>
+      <button class="ai-chip">How do I set up?</button>
+    </div>
+  </div>
+  <div class="ai-input">
+    <input type="text" placeholder="Type your message..." aria-label="Message input">
+    <button aria-label="Send message">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="js/castivo.js" defer></script>
+</body>
+</html>

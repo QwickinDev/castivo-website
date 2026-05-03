@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+<!-- CSP: defence-in-depth. Real CSP should be served as an HTTP header
+     via your host (see _headers / netlify.toml in repo root). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com; font-src 'self' https://fonts.gstatic.com https://api.fontshare.com https://cdn.fontshare.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; base-uri 'self'; form-action 'self';">
+
+<title>Pricing — From $9 AUD per screen per month | Castivo</title>
+<meta name="description" content="Free plan with 1 screen, $9 Starter, $19 Pro (most popular), $29 Business, custom Enterprise. All AUD ex-GST. No lock-in. Cancel anytime.">
+<meta name="author" content="Castivo / QwickIn IT Services Pty Ltd">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://castivo.com.au/pricing.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://castivo.com.au/pricing.html">
+<meta property="og:title" content="Castivo Pricing — Fair, no surprises">
+<meta property="og:description" content="From $9 AUD/screen/month. Free plan. Annual billing saves 17%.">
+<meta property="og:image" content="https://castivo.com.au/assets/og-image.png">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Castivo">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Castivo Pricing — Fair, no surprises">
+<meta name="twitter:description" content="From $9 AUD/screen/month. Free plan. Annual billing saves 17%.">
+<meta name="twitter:image" content="https://castivo.com.au/assets/og-image.png">
+
+<meta name="theme-color" content="#F26B1F">
+<!-- JSON-LD: Product -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Castivo Digital Signage",
+  "description": "Software-only digital signage subscription. Runs on your existing Android TV.",
+  "brand": {"@type": "Brand", "name": "Castivo"},
+  "offers": [
+    {"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "AUD"},
+    {"@type": "Offer", "name": "Starter", "price": "9", "priceCurrency": "AUD"},
+    {"@type": "Offer", "name": "Pro", "price": "19", "priceCurrency": "AUD"},
+    {"@type": "Offer", "name": "Business", "price": "29", "priceCurrency": "AUD"}
+  ]
+}
+</script>
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<!-- Satoshi from Fontshare (free for commercial use) -->
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/castivo.css">
+
+<!-- Google Analytics 4 — add your GA4 Measurement ID and uncomment to enable.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+</script>
+-->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Castivo home">
+      <img src="assets/castivo-primary-light.png" alt="Castivo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="products.html">Product</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost" style="padding: 9px 14px; font-size: 14px;">Log in</a>
+      <a href="signup.html" class="btn btn-secondary">Sign up</a>
+      <a href="pricing.html#start" class="btn btn-primary">Start free <span class="arrow">→</span></a>
+    </div>
+    <button class="nav-mobile-toggle" aria-label="Open menu"><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="products.html">Product</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="resources.html">Resources</a>
+  <a href="login.html">Log in</a>
+  <a href="signup.html">Sign up</a>
+  <div class="mobile-cta"><a href="#start" class="btn btn-primary btn-large">Start free</a></div>
+</div>
+
+<!-- ===== PRICING HERO — four numbers at giant scale ===== -->
+<section class="pricing-hero">
+  <div class="container">
+    <div class="breadcrumb">Home <span class="sep">/</span> Pricing</div>
+    <h1 class="pricing-hero-title">Fair pricing.<br><span class="accent">No surprises.</span></h1>
+    <p class="pricing-hero-sub">Software-only digital signage for your existing Android TV. Start free, upgrade when you want, cancel anytime. All prices in AUD, GST exclusive.</p>
+
+    <div class="pricing-hero-numbers">
+      <a href="#start" class="phn-item">
+        <div class="phn-row"><span class="phn-currency">$</span><span class="phn-amount">0</span></div>
+        <div class="phn-tier">Free</div>
+        <div class="phn-desc">1 screen, forever</div>
+      </a>
+      <a href="#start" class="phn-item">
+        <div class="phn-row"><span class="phn-currency">$</span><span class="phn-amount">9</span></div>
+        <div class="phn-tier">Starter</div>
+        <div class="phn-desc">/ screen / month</div>
+      </a>
+      <a href="#start" class="phn-item phn-featured">
+        <div class="phn-badge">Most popular</div>
+        <div class="phn-row"><span class="phn-currency">$</span><span class="phn-amount">19</span></div>
+        <div class="phn-tier">Pro</div>
+        <div class="phn-desc">/ screen / month</div>
+      </a>
+      <a href="#start" class="phn-item">
+        <div class="phn-row"><span class="phn-currency">$</span><span class="phn-amount">29</span></div>
+        <div class="phn-tier">Business</div>
+        <div class="phn-desc">/ screen / month</div>
+      </a>
+    </div>
+
+    <div class="pricing-hero-foot">
+      <span><span class="check">✓</span> Annual billing saves 17%</span>
+      <span><span class="check">✓</span> Cancel anytime after initial term</span>
+      <span><span class="check">✓</span> AUD pricing, GST exclusive</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING TIERS ===== -->
+<section class="section section-tight" id="start">
+  <div class="container">
+    <div style="display: flex; justify-content: center; margin-bottom: 16px;">
+      <div class="pricing-toggle">
+        <button data-billing="monthly" class="is-active">Monthly</button>
+        <button data-billing="annual">Annual <span class="save-badge">Save 17%</span></button>
+      </div>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Free -->
+      <div class="tier-card">
+        <div class="tier-name">Free</div>
+        <div class="tier-tagline">Try Castivo on one Android TV, forever.</div>
+        <div class="tier-price-row">
+          <span class="currency">$</span><span class="amount">0</span>
+          <span class="period">forever</span>
+        </div>
+        <ul class="tier-features">
+          <li>1 Android TV</li>
+          <li>Cloud content editor</li>
+          <li>Image, video &amp; web content</li>
+          <li>Castivo watermark on screen</li>
+          <li>Email support</li>
+          <li class="unavail">Multi-screen scheduling</li>
+          <li class="unavail">Templates library</li>
+        </ul>
+        <a href="login.html" class="btn btn-secondary">Start free</a>
+      </div>
+
+      <!-- Starter -->
+      <div class="tier-card">
+        <div class="tier-name">Starter</div>
+        <div class="tier-tagline">For small businesses with one or a few screens.</div>
+        <div class="tier-price-row">
+          <span data-price-monthly>
+            <span class="currency">$</span><span class="amount">9</span>
+            <span class="period">/ screen / month, billed monthly</span>
+          </span>
+          <span data-price-annual style="display:none;">
+            <span class="currency">$</span><span class="amount">7.40</span>
+            <span class="period">/ screen / month, billed annually ($89/yr)</span>
+          </span>
+        </div>
+        <ul class="tier-features">
+          <li>Unlimited Android TVs</li>
+          <li>No watermark</li>
+          <li>500+ industry templates</li>
+          <li>Image, video &amp; web content</li>
+          <li>Content scheduling</li>
+          <li>Multi-screen sync</li>
+          <li>Email &amp; chat support</li>
+        </ul>
+        <a href="login.html" class="btn btn-secondary">Choose Starter</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="tier-card featured">
+        <div class="featured-badge">Most popular</div>
+        <div class="tier-name">Pro</div>
+        <div class="tier-tagline">For multi-location businesses with several screens.</div>
+        <div class="tier-price-row">
+          <span data-price-monthly>
+            <span class="currency">$</span><span class="amount">19</span>
+            <span class="period">/ screen / month, billed monthly</span>
+          </span>
+          <span data-price-annual style="display:none;">
+            <span class="currency">$</span><span class="amount">15.75</span>
+            <span class="period">/ screen / month, billed annually ($189/yr)</span>
+          </span>
+        </div>
+        <ul class="tier-features">
+          <li>Everything in Starter</li>
+          <li>Multi-location management</li>
+          <li>Tagging &amp; screen groups</li>
+          <li>Advanced scheduling &amp; dayparting</li>
+          <li>User roles &amp; permissions</li>
+          <li>Proof-of-play reports</li>
+          <li>Free in-person setup (metro AU)</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="login.html" class="btn btn-primary">Choose Pro</a>
+      </div>
+
+      <!-- Business -->
+      <div class="tier-card">
+        <div class="tier-name">Business</div>
+        <div class="tier-tagline">For larger networks needing security and scale.</div>
+        <div class="tier-price-row">
+          <span data-price-monthly>
+            <span class="currency">$</span><span class="amount">29</span>
+            <span class="period">/ screen / month, billed monthly</span>
+          </span>
+          <span data-price-annual style="display:none;">
+            <span class="currency">$</span><span class="amount">24.15</span>
+            <span class="period">/ screen / month, billed annually ($290/yr)</span>
+          </span>
+        </div>
+        <ul class="tier-features">
+          <li>Everything in Pro</li>
+          <li>SSO / SAML</li>
+          <li>API access</li>
+          <li>Audit logs</li>
+          <li>Advanced analytics</li>
+          <li>Dedicated account manager</li>
+          <li>Phone support</li>
+          <li>Onboarding &amp; training</li>
+        </ul>
+        <a href="resources.html#contact" class="btn btn-secondary">Talk to sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ENTERPRISE BAND ===== -->
+<section class="section section-tight" style="background: var(--ink); color: var(--cream); padding-top: 48px; padding-bottom: 48px;">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center;">
+      <div>
+        <div style="font-family: var(--font-mono); color: var(--tangerine); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; font-weight: 600;">Enterprise</div>
+        <h3 class="h-display h3" style="color: var(--cream); margin-bottom: 14px;">50+ screens? White label? Custom integration?</h3>
+        <p style="color: rgba(255, 246, 238, 0.7); max-width: 540px;">Volume discounts begin at 50 screens, deeper at 200+. White-label option available for resellers and managed service providers. Custom SLA up to 99.95%, dedicated CSM, 24/7 support, custom integrations.</p>
+      </div>
+      <div style="text-align: right;">
+        <a href="resources.html#contact" class="btn btn-primary btn-large" style="background: var(--tangerine);">Talk to sales <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPARE TABLE ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Compare every feature</div>
+      <h2 class="h-display h2">All four tiers,<br>side by side.</h2>
+    </div>
+
+    <div style="background: white; border: 1px solid var(--line); border-radius: 16px; overflow: hidden;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+        <thead>
+          <tr style="background: var(--cream);">
+            <th style="text-align: left; padding: 18px 24px; font-family: var(--font-display); font-weight: 700; font-size: 13px; color: var(--charcoal);">Feature</th>
+            <th style="padding: 18px 24px; font-family: var(--font-display); font-weight: 700; font-size: 16px;">Free</th>
+            <th style="padding: 18px 24px; font-family: var(--font-display); font-weight: 700; font-size: 16px;">Starter</th>
+            <th style="padding: 18px 24px; font-family: var(--font-display); font-weight: 700; font-size: 16px; color: var(--tangerine);">Pro</th>
+            <th style="padding: 18px 24px; font-family: var(--font-display); font-weight: 700; font-size: 16px;">Business</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Number of screens</td><td style="text-align: center;">1</td><td style="text-align: center;">Unlimited</td><td style="text-align: center;">Unlimited</td><td style="text-align: center;">Unlimited</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Watermark on screen</td><td style="text-align: center;">Yes</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Image, video &amp; web content</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">500+ industry templates</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Multi-screen scheduling</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Multi-location grouping</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Dayparting &amp; advanced rules</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Proof-of-play reports</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">User roles &amp; permissions</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">SSO / SAML</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">API access</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Audit logs</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Advanced analytics</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Free in-person setup (metro AU)</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Email support</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Chat support</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Phone support</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;">Priority</td><td style="text-align: center; color: var(--tangerine);">Dedicated</td></tr>
+          <tr style="border-top: 1px solid var(--line);"><td style="padding: 14px 24px; font-weight: 500;">Onboarding &amp; training</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center; color: var(--tangerine);">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROMOTIONS ===== -->
+<section class="section" style="background: var(--cream);">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Discounts</div>
+      <h2 class="h-display h2">Save more,<br>when you save smart.</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7"/><path d="M16 14l4 4-4 4"/></svg></div>
+        <h3>Stuck in a long contract?</h3>
+        <p>Locked into a multi-year signage contract elsewhere? Get 50% off Castivo for 6 months while you wait it out. Email us with your contract end date.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 11-3 3-3-3"/></svg></div>
+        <h3>Volume discount</h3>
+        <p>20% off at 10+ screens. 30% off at 25+ screens. Applied automatically at checkout — no negotiation needed.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <h3>Education &amp; non-profit</h3>
+        <p>25% off all plans for registered schools, universities, and Australian non-profit organisations. Just send us your ABN.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-12a8 8 0 0 1 16 0c0 7.5-8 12-8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>In-person setup, free</h3>
+        <p>Metro Sydney, Melbourne, Brisbane, Perth, Adelaide — Pro and Business customers get free on-site setup at no extra charge.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Annual billing</h3>
+        <p>Pay annually and save approximately 17% across all plans. One invoice, no monthly admin, predictable budgeting.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l8-8 8 8M5 9v11h14V9"/></svg></div>
+        <h3>Free tier, forever</h3>
+        <p>One Android TV at no charge, no card required. Try Castivo on your real screen before you spend a dollar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Pricing FAQ</div>
+      <h2 class="h-display h2">Common questions,<br><span class="accent">straight answers.</span></h2>
+    </div>
+    <div class="faq">
+      <details class="faq-item">
+        <summary>Do I need to buy hardware from Castivo?</summary>
+        <div class="faq-body">No. Castivo is software-only. You bring your own Android TV — any modern model works (Android 8.0 or later, 2GB RAM, 1080p). We'll publish a list of tested models, or just ask us before you buy.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How does the free plan work?</summary>
+        <div class="faq-body">One screen, free forever, no credit card needed. The screen displays a small Castivo watermark — that's the only limitation. Upgrade anytime to remove it and add unlimited screens.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What's the difference between monthly and annual billing?</summary>
+        <div class="faq-body">Monthly is simpler — pay as you go, cancel anytime. Annual saves you about 17% in exchange for a single yearly invoice. You can switch between them at any renewal.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can I cancel any time?</summary>
+        <div class="faq-body">Yes. After your initial term (month-to-month, 12, or 24 months — your choice), you can cancel with 30 days' notice and pay nothing extra. No 70% early-termination penalty like the enterprise providers.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you offer custom pricing for very large deployments?</summary>
+        <div class="faq-body">Yes. Volume discounts kick in automatically at 10 screens (20% off) and 25 screens (30% off). For 50+ screens or white-label requirements, contact us for a custom quote.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What payment methods do you accept?</summary>
+        <div class="faq-body">Credit card (Visa, Mastercard, Amex) or direct debit (BECS) — your choice. We process payments via Stripe Australia. All invoices are AUD with GST itemised.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Will the price ever go up?</summary>
+        <div class="faq-body">If we adjust prices, we'll cap any increase at CPI + 3%, no more than once per 12 months, and give you 60 days' written notice. You can cancel within those 60 days at no cost if you don't want to accept the change.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-stripe">
+  <div class="container">
+    <h2 class="h-display h2">One screen,<br>free forever.</h2>
+    <p class="lead">Bring your own Android TV, sign up, pair the screen, you're live. No card required.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a href="login.html" class="btn btn-primary btn-large">Start free <span class="arrow">→</span></a>
+      <a href="resources.html#contact" class="btn btn-secondary btn-large">Talk to sales</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/castivo-primary-dark.png" alt="Castivo" loading="lazy" decoding="async">
+        <p>Hardware-free digital signage for your existing Android TV. Made in Australia.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.5 18V10h-3v8zM7 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM18 18v-4.7c0-2.4-1.3-3.5-3-3.5-1.4 0-2 .8-2.4 1.4V10h-3v8h3v-4.4c0-.3 0-.6.1-.8.2-.6.7-1.2 1.6-1.2 1.1 0 1.6.8 1.6 2.1V18z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.81.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.05 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.81-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.25.05-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.81-.25-2.23-.42-.56-.22-.96-.48-1.38-.9a3.7 3.7 0 0 1-.9-1.38c-.17-.42-.37-1.06-.42-2.23C2.27 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.81.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.4 2.27 8.8 2.2 12 2.2zM12 0C8.74 0 8.33 0 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.9 5.9 0 0 0 1.38 2.13 5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="products.html">Features</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="resources.html#devices">Compatible TVs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="resources.html#about">About</a></li>
+          <li><a href="resources.html#contact">Contact</a></li>
+          <li><a href="resources.html#blog">Blog</a></li>
+          <li><a href="resources.html#partners">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="testimonials.html">Customer stories</a></li>
+          <li><a href="resources.html#help">Help center</a></li>
+          <li><a href="resources.html#guides">Setup guides</a></li>
+          <li><a href="resources.html#faq">FAQ</a></li>
+          <li><a href="login.html">Customer portal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="resources.html#terms">Terms</a></li>
+          <li><a href="resources.html#privacy">Privacy</a></li>
+          <li><a href="resources.html#agreement">Subscription agreement</a></li>
+          <li><a href="resources.html#dpa">Data processing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Castivo, operated by QwickIn IT Services Pty Ltd. All rights reserved.</span>
+      <div class="legal">
+        <a href="resources.html#terms">Terms</a>
+        <a href="resources.html#privacy">Privacy</a>
+        <a href="resources.html#cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ===== AI ASSISTANT (Cassie) ===== -->
+<button class="ai-bubble" aria-label="Open chat with Cassie">
+  <div class="ai-pulse"></div>
+  <svg class="ai-bubble-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  <svg class="ai-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</button>
+
+<div class="ai-panel" role="dialog" aria-label="Cassie AI assistant">
+  <div class="ai-header">
+    <div class="ai-avatar">C</div>
+    <div class="ai-header-info">
+      <div class="ai-name">Cassie</div>
+      <div class="ai-status">Castivo's AI · Replies in seconds</div>
+    </div>
+  </div>
+  <div class="ai-messages">
+    <div class="ai-msg from-bot">G'day! I'm <b>Cassie</b>, the Castivo assistant. Ask me anything about pricing, supported TVs, setup, or book a demo.</div>
+    <div class="ai-suggestions">
+      <button class="ai-chip">How does pricing work?</button>
+      <button class="ai-chip">What TVs are supported?</button>
+      <button class="ai-chip">Book a demo</button>
+      <button class="ai-chip">How do I set up?</button>
+    </div>
+  </div>
+  <div class="ai-input">
+    <input type="text" placeholder="Type your message..." aria-label="Message input">
+    <button aria-label="Send message">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="js/castivo.js" defer></script>
+</body>
+</html>
